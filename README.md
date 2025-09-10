@@ -76,7 +76,7 @@ Step-by-Step Installation
 Clone the repository
 
 bash
-git clone https://github.com/your-username/course-registration-portal.git
+git clone [https://github.com/your-username/course-registration-portal.git](https://github.com/sinazsvg/Course-Registration-Portal-Project)
 cd course-registration-portal
 Create and activate virtual environment
 
