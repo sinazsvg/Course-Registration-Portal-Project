@@ -1,6 +1,7 @@
 # Course-Registration-Portal-Project
 
 Course Registration Portal 🎓
+
 https://img.shields.io/badge/Python-3.8%252B-blue
 
 https://img.shields.io/badge/Flask-2.3.3-green
@@ -28,6 +29,7 @@ Student Profile - Complete profile management system
 Schedule Management - Visual timetable of registered courses
 
 🛡 Administrator Features
+
 Advanced Authentication - Two-factor admin verification with admin IDs
 
 Complete Course Management - Create, edit, and delete courses
@@ -39,6 +41,7 @@ Real-time Analytics - View enrollment statistics and system status
 User Management - Monitor student registrations and activities
 
 🚀 System Features
+
 RTL Support - Complete Persian language interface with right-to-left layout
 
 Responsive Design - Mobile-friendly Bootstrap interface
@@ -52,6 +55,7 @@ Comprehensive Logging - Detailed activity logging with daily log files
 Schedule Conflict Detection - Prevents overlapping course registrations
 
 🛠 Technology Stack
+
 Backend Framework: Flask 2.3.3
 
 Frontend: HTML5, CSS3, JavaScript, Bootstrap 5.3.0
@@ -67,6 +71,7 @@ Logging: Python logging module with daily file rotation
 Language Support: Full RTL (Right-to-Left) for Persian language
 
 📦 Installation & Setup
+
 Prerequisites
 Python 3.8 or higher
 
@@ -100,6 +105,7 @@ Access the application
 Open your web browser and navigate to http://localhost:5000
 
 🏗 Project Structure
+
 text
 course-registration-portal/
 
@@ -158,7 +164,9 @@ course-registration-portal/
 └── README.md           # Project documentation
 
 👥 User Roles & Permissions
+
 Student 👨‍🎓
+
 Register new account with student role
 
 Browse available courses in the catalog
@@ -172,6 +180,7 @@ Access and manage personal profile
 View academic schedule and timetable
 
 Administrator 🛡
+
 Register with administrator role (requires admin ID)
 
 Access comprehensive admin dashboard
@@ -187,6 +196,7 @@ Monitor all user registrations and activities
 View system analytics and statistics
 
 🎯 Usage Guide
+
 For Students
 Registration: Create a new account with student role
 
@@ -210,6 +220,7 @@ Course Management: Create new courses with complete details
 System Maintenance: Manage existing courses and user registrations
 
 🔌 API Endpoints
+
 
 Method  Endpoint  Description  Access Level
 
@@ -236,6 +247,7 @@ GET/POST  /admin/edit_course/<id>  Edit course  Administrators
 POST  /admin/delete_course/<id>  Delete course  Administrators
 
 🎨 UI/UX Features
+
 Modern Responsive Design: Clean Bootstrap-based interface
 
 RTL Support: Complete Persian language support with right-to-left layout
@@ -249,6 +261,7 @@ Professional Styling: Gradient headers and card-based design
 User-Friendly Navigation: Intuitive menu structure and workflow
 
 🔒 Security Features
+
 Role-based authentication system
 
 Session management with secure cookies
@@ -264,6 +277,7 @@ Comprehensive activity logging
 Access control for sensitive operations
 
 📝 Logging System
+
 The application includes a comprehensive logging system:
 
 User authentication events (success/failure)
@@ -279,11 +293,13 @@ Daily log files with automatic rotation
 Timestamped records for all activities
 
 👨‍💻 Development Team
+
 Sina Zamani - Developer - GitHub
 
 Samin Hashemi - Developer - GitHub
 
 🔮 Future Enhancements
+
 Database migration to SQLite/PostgreSQL
 
 Email notifications system
@@ -305,6 +321,7 @@ Grade management system
 Attendance tracking functionality
 
 📊 Sample Data
+
 The system includes sample data for demonstration and testing:
 
 Pre-defined admin IDs: ADM-001, ADM-002, ADM-003
@@ -314,6 +331,7 @@ Sample courses with various schedules and capacities
 Demonstration user accounts for both student and admin roles
 
 🤝 Contributing
+
 We welcome contributions from the community! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
 Fork the project repository
@@ -327,9 +345,11 @@ Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 📄 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 🆘 Support
+
 For support, please contact us at:
 
 Email: support@courseregistration.com
