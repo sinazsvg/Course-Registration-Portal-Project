@@ -2,8 +2,11 @@
 
 Course Registration Portal 🎓
 https://img.shields.io/badge/Python-3.8%252B-blue
+
 https://img.shields.io/badge/Flask-2.3.3-green
+
 https://img.shields.io/badge/Bootstrap-5.3.0-purple
+
 https://img.shields.io/badge/License-MIT-yellow.svg
 
 A comprehensive Flask-based web application for managing course registrations with role-based access control, beautiful Persian RTL interface, and advanced administrative features.
