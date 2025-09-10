@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروفایل کاربری</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Vazir', Tahoma, sans-serif; background-color: #f8f9fa; }
+        .profile-header { background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); }
+        .profile-card { border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .info-card { border-left: 4px solid #4CAF50; }
+        .course-card { border-left: 4px solid #2196F3; }
+        .admin-badge { background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); }
+        .student-badge { background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%); }
+        .management-card { border-left: 4px solid #FF9800; }
+    </style>
+</head>
+<body>
+    <header class="profile-header py-5 mb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="text-white mb-3">
+                        <i class="bi bi-person-circle"></i>
+                        پروفایل کاربری
+                    </h1>
+                    <h2 class="text-white mb-0">{{ user.username }}
+                        {% if user.role == 'administrator' %}
+                        <span class="badge admin-badge">
+                            مدیر سیستم
+                            {% if user.admin_id %}
+                            (شناسه: {{ user.admin_id }})
+                            {% endif %}
+                        </span>
+                        {% elif user.role == 'student' %}
+                        <span class="badge student-badge">
+                            دانشجو
+                            {% if user.student_id %}
+                            (شماره: {{ user.student_id }})
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                    </h2>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-4 mt-md-0">
+                    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-light btn-lg me-2">
+                        <i class="bi bi-columns"></i> داشبورد
+                    </a>
+                    <a href="{{ url_for('home') }}" class="btn btn-light btn-lg">
+                        <i class="bi bi-house"></i> صفحه اصلی
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-4">
+            <!-- بخش اطلاعات کاربر -->
+            <div class="col-lg-4">
+                <div class="card profile-card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">
+                            <i class="bi bi-info-circle"></i>
+                            اطلاعات شخصی
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-card mb-3 p-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">نام کاربری:</span>
+                                <span>{{ user.username }}</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card mb-3 p-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">نقش کاربری:</span>
+                                <span>
+                                    {% if user.role == 'administrator' %}
+                                    <span class="badge admin-badge">
+                                        مدیر سیستم
+                                        {% if user.admin_id %}
+                                        (شناسه: {{ user.admin_id }})
+                                        {% endif %}
+                                    </span>
+                                    {% elif user.role == 'student' %}
+                                    <span class="badge student-badge">
+                                        دانشجو
+                                        {% if user.student_id %}
+                                        (شماره: {{ user.student_id }})
+                                        {% endif %}
+                                    </span>
+                                    {% else %}
+                                    <span class="badge bg-secondary">{{ user.role }}</span>
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info-card mb-3 p-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">ایمیل:</span>
+                                <span>{{ user.email }}</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card mb-3 p-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">تاریخ عضویت:</span>
+                                <span>{{ user.created_at[:10] }}</span>
+                            </div>
+                        </div>
+
+                        <!-- بخش مدیریت برای مدیران -->
+                        {% if user.role == 'administrator' %}
+                        <div class="management-card mt-4 p-3">
+                            <h4 class="mb-3">
+                                <i class="bi bi-gear"></i>
+                                مدیریت سیستم
+                            </h4>
+                            <div class="d-grid gap-2">
+                                <a href="{{ url_for('manage_courses') }}" class="btn btn-primary">
+                                    <i class="bi bi-journal-bookmark"></i> مدیریت دوره‌ها
+                                </a>
+                                <a href="{{ url_for('create_course') }}" class="btn btn-success">
+                                    <i class="bi bi-plus-circle"></i> ایجاد دوره جدید
+                                </a>
+                                <a href="{{ url_for('enrollments_report') }}" class="btn btn-info">
+                                    <i class="bi bi-clipboard-data"></i> گزارش ثبت‌نام‌ها
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- بخش دوره‌های ثبت‌نام شده (فقط برای دانشجویان) -->
+            <div class="col-lg-8">
+                <div class="card profile-card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">
+                            <i class="bi bi-journal-bookmark"></i>
+                            {% if user.role == 'student' %}دوره‌های ثبت‌نام شده{% else %}اطلاعات دوره‌ها{% endif %}
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        {% if user.role == 'student' %}
+                            {% if courses %}
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>عنوان دوره</th>
+                                            <th>کد دوره</th>
+                                            <th>زمان برگزاری</th>
+                                            <th>وضعیت</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for course in courses %}
+                                        <tr>
+                                            <td>{{ course.title }}</td>
+                                            <td>{{ course.course_id }}</td>
+                                            <td>{{ course.schedule }}</td>
+                                            <td>
+                                                <span class="badge bg-success">فعال</span>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {% else %}
+                            <div class="text-center py-5">
+                                <div class="mb-4">
+                                    <i class="bi bi-journal-x" style="font-size: 4rem; color: #6c757d;"></i>
+                                </div>
+                                <h4 class="text-secondary">هنوز در هیچ دوره‌ای ثبت‌نام نکرده‌اید</h4>
+                                <p class="text-muted">می‌توانید از لیست دوره‌های آموزشی، دوره مورد نظر خود را انتخاب کنید</p>
+                                <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg mt-3">
+                                    <i class="bi bi-book"></i> مشاهده دوره‌ها
+                                </a>
+                            </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="text-center py-5">
+                                <div class="mb-4">
+                                    <i class="bi bi-journal-check" style="font-size: 4rem; color: #6c757d;"></i>
+                                </div>
+                                <h4 class="text-secondary">مدیریت دوره‌های آموزشی</h4>
+                                <p class="text-muted">شما به عنوان مدیر سیستم می‌توانید دوره‌های آموزشی را مدیریت کنید</p>
+                                <a href="{{ url_for('manage_courses') }}" class="btn btn-primary btn-lg mt-3">
+                                    <i class="bi bi-gear"></i> ورود به بخش مدیریت
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    {% if courses and user.role == 'student' %}
+                    <div class="card-footer bg-transparent">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">تعداد دوره‌ها:</span>
+                                <span class="badge bg-primary">{{ courses|length }}</span>
+                            </div>
+                            <a href="{{ url_for('home') }}" class="btn btn-outline-primary">
+                                <i class="bi bi-plus-circle"></i> ثبت‌نام در دوره جدید
+                            </a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-0">سیستم مدیریت آموزشی © ۱۴۰۲</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

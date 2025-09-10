@@ -1,0 +1,31 @@
+[
+    {
+        "username": "سینا زمانی",
+        "password": "sina1385sina1385",
+        "email": "sinazamani7361@gmail.com",
+        "role": "student",
+        "created_at": "2025-07-10T21:51:55.654768"
+    },
+    {
+        "username": "mobi",
+        "password": "mobiironfarm",
+        "email": "scp.edu.bestedu@gmail.com",
+        "role": "administrator",
+        "created_at": "2025-08-02T20:38:34.890755"
+    },
+    {
+        "username": "theking",
+        "password": "2H?Sk=g;G2q!TP%",
+        "email": "manking@hastam.com",
+        "role": "administrator",
+        "created_at": "2025-08-28T00:17:07.326136"
+    },
+    {
+        "username": "itssina",
+        "password": "bowbowisverylow1",
+        "email": "sinazamani7363@gmail.com",
+        "role": "student",
+        "created_at": "2025-09-09T20:37:11.697547",
+        "student_id": "140311102401787"
+    }
+]

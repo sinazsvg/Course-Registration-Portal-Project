@@ -1,0 +1,60 @@
+[
+    {
+        "course_id": "CS101",
+        "title": "مقدمات برنامه‌نویسی",
+        "schedule": "شنبه ۸-۱۰",
+        "capacity": 30,
+        "price": 0
+    },
+    {
+        "course_id": "MATH202",
+        "title": "ریاضیات پیشرفته",
+        "schedule": "یکشنبه 12-22",
+        "capacity": 25,
+        "prerequisites": [],
+        "description": "",
+        "updated_at": "2025-08-03T15:29:33.228989",
+        "price": 0
+    },
+    {
+        "course_id": "140444",
+        "title": "دوره چگونه مانند سینا زمانی شویم",
+        "schedule": "دوشنبه و چهارشنبه 16-18",
+        "capacity": 30,
+        "prerequisites": [],
+        "description": "سخت ترین دوره تاریخ",
+        "created_by": "mobi",
+        "created_by_admin_id": "ADM-001",
+        "created_at": "2025-08-03T15:05:50.510961",
+        "updated_at": "2025-08-03T15:05:50.510968",
+        "price": 0
+    },
+    {
+        "course_id": "2321",
+        "title": "یسبس",
+        "schedule": "دوشنبه و چهارشنبه 16-18",
+        "capacity": 30,
+        "prerequisites": [
+            "بیشسلس"
+        ],
+        "description": "سیبشس",
+        "created_by": "mobi",
+        "created_by_admin_id": "ADM-001",
+        "created_at": "2025-08-03T15:06:48.934637",
+        "updated_at": "2025-08-03T15:06:48.934645",
+        "price": 0
+    },
+    {
+        "course_id": "bking",
+        "title": "چگونه کینگ شویم",
+        "schedule": "وقتی همه خوابن",
+        "capacity": 7,
+        "prerequisites": [],
+        "description": "شما نمیتوانید کینگ شوید",
+        "created_by": "theking",
+        "created_by_admin_id": "ADM-002",
+        "created_at": "2025-08-28T00:20:33.363979",
+        "updated_at": "2025-09-09T20:35:44.561388",
+        "price": 555777333000.0
+    }
+]
