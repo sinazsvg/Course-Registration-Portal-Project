@@ -9,7 +9,6 @@ Course Registration Portal 🎓
 
 A comprehensive Flask-based web application for managing course registrations with role-based access control, beautiful Persian RTL interface, and advanced administrative features.
 
-![Course Registration Portal](https://via.placeholder.com/300x400/AA6572/EEEEEE?text=Courses+Registration)
 
 ✨ Features
 👨‍🎓 Student Features
