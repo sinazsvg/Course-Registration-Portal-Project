@@ -105,61 +105,35 @@ Open your web browser and navigate to http://localhost:5000
 
 text
 course-registration-portal/
-
-├── data/                 # JSON data storage
-
+```
+├── data/                 # JSON data storag
 │   ├── users.json        # User accounts and credentials
-
 │   ├── courses.json      # Course information and details
-
 │   ├── registrations.json # Course enrollment records
-
 │   └── admin_ids.json    # Administrator identification codes
-
 ├── models/               # Data models and business logic
-
 │   ├── user.py          # User model and authentication logic
-
 │   ├── course.py        # Course model and management logic
-
 │   ├── registration.py  # Registration model and enrollment logic
-
 │   └── schedule.py      # Schedule management and conflict detection
-
 ├── templates/           # HTML templates with Jinja2
-
 │   ├── index.html       # Homepage with course catalog
-
 │   ├── login.html       # User authentication page
-
 │   ├── register.html    # User registration page
-
 │   ├── dashboard.html   # User dashboard after login
-
 │   ├── profile.html     # User profile management
-
 │   ├── admin_courses.html # Course management interface
-
 │   ├── create_course.html # Course creation form
-
 │   ├── edit_course.html  # Course editing interface
-
 │   └── verify_admin.html # Admin verification page
-
 ├── utils/               # Utility modules and helpers
-
 │   ├── json_handler.py  # JSON file read/write operations
-
 │   ├── authenticator.py # User authentication logic
-
 │   └── logger.py       # Application logging system
-
 ├── logs/                # Application logs (auto-generated)
-
 ├── app.py              # Main application entry point
-
 └── README.md           # Project documentation
-
+```
 👥 User Roles & Permissions
 
 Student 👨‍🎓
