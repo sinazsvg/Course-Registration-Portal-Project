@@ -78,7 +78,7 @@ Step-by-Step Installation
 Clone the repository
 
 bash
-git clone [https://github.com/your-username/course-registration-portal.git](https://github.com/sinazsvg/Course-Registration-Portal-Project)
+git clone [https://github.com/sinazsvg/course-registration-portal.git](https://github.com/sinazsvg/Course-Registration-Portal-Project)
 cd course-registration-portal
 Create and activate virtual environment
 
@@ -139,9 +139,7 @@ course-registration-portal/
 │   ├── profile.html     # User profile management
 
 │   ├── admin_courses.html # Course management interface
-
 │   ├── create_course.html # Course creation form
-
 │   ├── edit_course.html  # Course editing interface
 
 │   └── verify_admin.html # Admin verification page
@@ -349,7 +347,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For support, please contact us at:
 
-Email: support@courseregistration.com
+Email: sinazamani7362@gmail.com
 
 Issue Tracker: GitHub Issues
 
