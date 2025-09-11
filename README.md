@@ -190,33 +190,21 @@ Course Management: Create new courses with complete details
 
 System Maintenance: Manage existing courses and user registrations
 
-🔌 API Endpoints
+## 🔌 API Endpoints
 
-
-Method  Endpoint  Description  Access Level
-
-GET  /  Homepage with course catalog  Public
-
-GET/POST  /register  User registration  Public
-
-GET/POST  /login  User authentication  Public
-
-GET  /logout  User logout  Authenticated
-
-GET  /dashboard  User dashboard  Authenticated
-
-GET  /profile  User profile  Authenticated
-
-POST  /enroll  Course enrollment  Students Only
-
-GET  /admin/courses  Course management  Administrators
-
-GET/POST  /admin/create_course  Create course  Administrators
-
-GET/POST  /admin/edit_course/<id>  Edit course  Administrators
-
-POST  /admin/delete_course/<id>  Delete course  Administrators
-
+| Method | Endpoint | Description | Access Level |
+|--------|----------|-------------|--------------|
+| GET | `/` | Homepage with course catalog | Public |
+| GET/POST | `/register` | User registration | Public |
+| GET/POST | `/login` | User authentication | Public |
+| GET | `/logout` | User logout | Authenticated |
+| GET | `/dashboard` | User dashboard | Authenticated |
+| GET | `/profile` | User profile | Authenticated |
+| POST | `/enroll` | Course enrollment | Students Only |
+| GET | `/admin/courses` | Course management | Administrators |
+| GET/POST | `/admin/create_course` | Create course | Administrators |
+| GET/POST | `/admin/edit_course/<id>` | Edit course | Administrators |
+| POST | `/admin/delete_course/<id>` | Delete course | Administrators |
 🎨 UI/UX Features
 
 Modern Responsive Design: Clean Bootstrap-based interface
