@@ -37,7 +37,7 @@ Real-time Analytics - View enrollment statistics and system status
 
 User Management - Monitor student registrations and activities
 
-🚀 System Features
+## 🚀 System Features
 
 RTL Support - Complete Persian language interface with right-to-left layout
 
@@ -51,7 +51,7 @@ Comprehensive Logging - Detailed activity logging with daily log files
 
 Schedule Conflict Detection - Prevents overlapping course registrations
 
-🛠 Technology Stack
+## 🛠 Technology Stack
 
 Backend Framework: Flask 2.3.3
 
@@ -67,7 +67,7 @@ Logging: Python logging module with daily file rotation
 
 Language Support: Full RTL (Right-to-Left) for Persian language
 
-📦 Installation & Setup
+## 📦 Installation & Setup
 
 Prerequisites
 Python 3.8 or higher
@@ -101,7 +101,7 @@ python app.py
 Access the application
 Open your web browser and navigate to http://localhost:5000
 
-🏗 Project Structure
+## 🏗 Project Structure
 
 text
 course-registration-portal/
@@ -134,7 +134,7 @@ course-registration-portal/
 ├── app.py              # Main application entry point
 └── README.md           # Project documentation
 ```
-👥 User Roles & Permissions
+## 👥 User Roles & Permissions
 
 Student 👨‍🎓
 
@@ -166,7 +166,7 @@ Monitor all user registrations and activities
 
 View system analytics and statistics
 
-🎯 Usage Guide
+## 🎯 Usage Guide
 
 For Students
 Registration: Create a new account with student role
@@ -205,7 +205,7 @@ System Maintenance: Manage existing courses and user registrations
 | GET/POST | `/admin/create_course` | Create course | Administrators |
 | GET/POST | `/admin/edit_course/<id>` | Edit course | Administrators |
 | POST | `/admin/delete_course/<id>` | Delete course | Administrators |
-🎨 UI/UX Features
+## 🎨 UI/UX Features
 
 Modern Responsive Design: Clean Bootstrap-based interface
 
@@ -219,7 +219,7 @@ Professional Styling: Gradient headers and card-based design
 
 User-Friendly Navigation: Intuitive menu structure and workflow
 
-🔒 Security Features
+## 🔒 Security Features
 
 Role-based authentication system
 
@@ -235,7 +235,7 @@ Comprehensive activity logging
 
 Access control for sensitive operations
 
-📝 Logging System
+## 📝 Logging System
 
 The application includes a comprehensive logging system:
 
@@ -256,7 +256,7 @@ Timestamped records for all activities
 - **Sina Zamani** - Developer - [GitHub](https://github.com/sinazsvg)
 - **Samin Hashemi** - Developer - [GitHub](https://github.com/samin-hashemi)
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 Database migration to SQLite/PostgreSQL
 
@@ -278,7 +278,7 @@ Grade management system
 
 Attendance tracking functionality
 
-📊 Sample Data
+## 📊 Sample Data
 
 The system includes sample data for demonstration and testing:
 
@@ -288,7 +288,7 @@ Sample courses with various schedules and capacities
 
 Demonstration user accounts for both student and admin roles
 
-🤝 Contributing
+## 🤝 Contributing
 
 We welcome contributions from the community! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
@@ -302,11 +302,11 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🆘 Support
+## 🆘 Support
 
 For support, please contact us at:
 
