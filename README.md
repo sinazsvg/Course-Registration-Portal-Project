@@ -25,7 +25,7 @@ Student Profile - Complete profile management system
 
 Schedule Management - Visual timetable of registered courses
 
-🛡 Administrator Features
+## 🛡 Administrator Features
 
 Advanced Authentication - Two-factor admin verification with admin IDs
 
@@ -150,7 +150,7 @@ Access and manage personal profile
 
 View academic schedule and timetable
 
-Administrator 🛡
+## Administrator 🛡
 
 Register with administrator role (requires admin ID)
 
