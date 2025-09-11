@@ -251,11 +251,10 @@ Daily log files with automatic rotation
 
 Timestamped records for all activities
 
-👨‍💻 Development Team
+## 👨‍💻 Development Team
 
-Sina Zamani - Developer - GitHub
-
-Samin Hashemi - Developer - GitHub
+- **Sina Zamani** - Developer - [GitHub](https://github.com/sinazsvg)
+- **Samin Hashemi** - Developer - [GitHub](https://github.com/samin-hashemi)
 
 🔮 Future Enhancements
 
