@@ -139,7 +139,9 @@ course-registration-portal/
 │   ├── profile.html     # User profile management
 
 │   ├── admin_courses.html # Course management interface
+
 │   ├── create_course.html # Course creation form
+
 │   ├── edit_course.html  # Course editing interface
 
 │   └── verify_admin.html # Admin verification page
